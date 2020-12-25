@@ -28,6 +28,7 @@ define Package/eoip
   $(call Package/eoip/Default)
   SECTION:=net
   CATEGORY:=Network
+  SUBMENU:=VPN
   DEPENDS:=+kmod-tun +libpthread +liblzo
   TITLE+= (command line)
 endef
