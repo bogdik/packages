@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=eoip
 PKG_VERSION:=0.5
 PKG_RELEASE:=1
-
+PKG_MAINTAINER:=Bogdik <bogdikxxx@gmail.com>
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://github.com/bogdik/openwrt-linux-eoip/releases/download/0.6.1/
 PKG_MD5SUM:=ab6afb3eb806aee7e6dbfad2bf74de9b
