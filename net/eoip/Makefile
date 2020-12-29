@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2012 OpenWrt.org
+# Copyright (C) 2006-2020 OpenWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -10,23 +10,19 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=eoip
 PKG_VERSION:=0.5
 PKG_RELEASE:=1
-PKG_MAINTAINER:=Bogdik <bogdikxxx@gmail.com>
-PKG_LICENSE:=GPL-2.0
+PKG_MAINTAINER:=bogdik <bogdikxxx@mail.ru>
+PKG_LICENSE:=GNU GPL v3
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://github.com/bogdik/openwrt-linux-eoip/releases/download/0.6.1/
-PKG_MD5SUM:=ab6afb3eb806aee7e6dbfad2bf74de9b
+PKG_SOURCE_URL:=https://github.com/bogdik/openwrt-linux-eoip/releases/download/0.5/
+PKG_HASH:=22f6f3864665adef26c7fbd57543a396108ba2dff1282af8143f18bc2a9912f8
 
 PKG_INSTALL:=1
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/eoip/Default
+define Package/eoip
   TITLE:=Mikrotik-compatible userspace EoIP tunnel
   URL:=http://code.google.com/p/linux-eoip/
-endef
-
-define Package/eoip
-  $(call Package/eoip/Default)
   SECTION:=net
   CATEGORY:=Network
   SUBMENU:=VPN
