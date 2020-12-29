@@ -33,7 +33,7 @@ service_triggers () {
 start_service() {
 	config_load "eoip"
 	echo "" > /etc/eoip.cfg
-        echo "#!/bin/sh" > /etc/afterStart.sh
+	echo "#!/bin/sh" > /etc/afterStart.sh
         echo "chkCount=0">> /etc/afterStart.sh
         echo "while [ \$chkCount -le 10 ];do">> /etc/afterStart.sh
         echo "  chkStarted=\$(ip a | grep zeoip | wc -l)">> /etc/afterStart.sh
