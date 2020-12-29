@@ -11,7 +11,7 @@ PKG_NAME:=eoip
 PKG_VERSION:=0.5
 PKG_RELEASE:=1
 PKG_MAINTAINER:=bogdik <bogdikxxx@mail.ru>
-PKG_LICENSE:=GNU GPL v3
+PKG_LICENSE:=GPL-3.0-or-later
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/bogdik/openwrt-linux-eoip/releases/download/0.5/
 PKG_HASH:=22f6f3864665adef26c7fbd57543a396108ba2dff1282af8143f18bc2a9912f8
@@ -27,7 +27,6 @@ define Package/eoip
   CATEGORY:=Network
   SUBMENU:=VPN
   DEPENDS:=+kmod-tun +libpthread +liblzo
-  TITLE+= (command line)
 endef
 
 define Package/eoip/conffiles
