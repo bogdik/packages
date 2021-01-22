@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=eoip
-PKG_VERSION:=0.5
+PKG_VERSION:=0.6.1
 PKG_RELEASE:=1
 PKG_MAINTAINER:=bogdik <bogdikxxx@mail.ru>
 PKG_LICENSE:=GPL-3.0-or-later
